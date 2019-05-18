@@ -12,7 +12,7 @@ FROM scratch
 WORKDIR /root/
 
 COPY --from=builder /kalista/kalista-app .
-COPY ./config/config.yml /root/config/config.yml
+# COPY ./config/config.yml /root/config/config.yml
 
 EXPOSE 8080
 ENTRYPOINT ["./kalista-app"]
